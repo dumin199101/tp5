@@ -982,7 +982,7 @@ class Index extends Controller
         }
 
         //指定验证场景
-        $validate->scene('edit')->validate('User');
+        $validate->scene('edit')->check($data);
 
         //3.控制器验证
         $this->validate($data,'User');
